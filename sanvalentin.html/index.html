@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel = "stylesheet" href = "estilos.css"> 
+</head>
+<body>
+ 
+   
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín? 💖</h1>
+
+        <div class = "image-container">
+              <img src = "Imagenes/neni.jpeg" alt = "Foto de neni y gordi">
+        </div>
+
+        <a class="btn yes" href="javascript:void(0);" onclick="showMessage()">Sí nalgon 💕</a>
+        <a class="btn obvious" href="javascript:void(0);" onclick="showMessage()">Obvio que sí nalgon😍</a>
+        <p id="message"></p>
+        
+        <h2 id="reason-title" style="display: none;">Aquí te dejo 5 razones por las cuales elegiste que si preciosa</h2>
+
+        <div class="reasons" id="reasons">
+            <ul id="reason-list">
+                <li class="reason">Porque soy tu gordi </li>
+                <li class="reason">Porque me haces sonreír siempre que te veo.</li>
+                <li class="reason">Porque juntos nos la pasamos increible</li>
+                <li class="reason">Porque te amo demasiado</li>
+                <li class="reason">Porque me haces sentir muy afortunado de estar contigo</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        
+        function showMessage() {
+            document.getElementById('message').innerText = "¡Me gustas mucho! 💖";  
+            document.getElementById('reasons').style.display = "block";  
+            document.getElementById('reason-title').style.display = "block"; 
+        }
+    </script>
+</body>
+</html>
